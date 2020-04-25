@@ -36,8 +36,7 @@ public class SqlAppl {
         Connection conn = null;
         try {
             //database location, database user, database password
-            conn = DriverManager.getConnection
-                           ("jdbc:postgresql:"POS_DB","postgres", "password");
+            conn = DriverManager.getConnection("jdbc:postgresql:POS_DB","postgres", "password");
             st = conn.createStatement();
             String qs = "CREATE TABLE IF NOT EXISTS user(user_id SERIAL NOT NULL PRIMARY KEY,username varchar(225) NOT NULL UNIQUE,password varchar(225),islogged varchar(10))";
             String qs1 = "SELECT * FROM test";
