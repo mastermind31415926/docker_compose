@@ -7,4 +7,4 @@ app-build:
 	docker-compose build
 
 app-bash:
-	docker-compose run --user=$(USER) app bash
+	docker-compose run --timeout 60 --user=$(USER) app bash
