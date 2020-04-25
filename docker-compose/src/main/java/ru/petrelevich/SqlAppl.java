@@ -1,4 +1,4 @@
-package SqlAppl;
+package ru.petrelevich;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class JavaPostgreSqlVersion {
+public class SqlAppl {
 
     public static void main(String[] args) {
 
@@ -26,7 +26,7 @@ public class JavaPostgreSqlVersion {
 
         } catch (SQLException ex) {
         
-            Logger lgr = Logger.getLogger(JavaPostgreSqlVersion.class.getName());
+            Logger lgr = Logger.getLogger(SqlAppl.class.getName());
             lgr.log(Level.SEVERE, ex.getMessage(), ex);
         }
     }
