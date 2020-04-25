@@ -12,7 +12,7 @@ public class SqlAppl {
 
     public static void main(String[] args) {
 
-        String url = "jdbc:postgresql://localhost:5432/testdb";
+        String url = "jdbc:postgresql://localhost:5432/posrgres";
         String user = "postgres";
         String password = "password";
 
