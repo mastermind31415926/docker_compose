@@ -22,7 +22,7 @@ public class SqlAppl
             Connection con = DriverManager.getConnection(url, login, password);
             try {
                 Statement stmt = con.createStatement();
-                ResultSet rs = stmt.executeQuery("select * from information_schema.tables");
+                ResultSet rs = stmt.executeQuery("select tables from information_schema.tables");
                 while (rs.next()) {
                     String str = rs.getString("table_name") + ":" + rs.getString(2);
                     System.out.println("table_name:" + str);
