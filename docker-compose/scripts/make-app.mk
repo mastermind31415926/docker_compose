@@ -1,7 +1,7 @@
 USER = "$(shell id -u):$(shell id -g)"
 
 app:
-	docker-compose up --abort-on-container-exit
+	docker-compose up
 
 app-build:
 	docker-compose build
